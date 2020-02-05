@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.5" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="1" attributes="0">
+              <EmptySpace pref="108" max="32767" attributes="0"/>
+              <Component id="relojBean1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="110" max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="relojBean1" pref="294" max="32767" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="Reloj.RelojBean" name="relojBean1">
+      <Properties>
+        <Property name="alarma" type="Reloj.AlarmaBean" editor="Reloj.AlarmaBeanPropertyEditor">
+          <SerializedValue value="-84,-19,0,5,115,114,0,16,82,101,108,111,106,46,65,108,97,114,109,97,66,101,97,110,-120,72,111,81,87,58,-44,9,2,0,3,76,0,8,97,99,116,105,118,97,100,97,116,0,18,76,106,97,118,97,47,108,97,110,103,47,83,116,114,105,110,103,59,76,0,10,104,111,114,97,65,108,97,114,109,97,113,0,126,0,1,76,0,15,112,114,111,112,101,114,116,121,83,117,112,112,111,114,116,116,0,34,76,106,97,118,97,47,98,101,97,110,115,47,80,114,111,112,101,114,116,121,67,104,97,110,103,101,83,117,112,112,111,114,116,59,120,112,116,0,4,116,114,117,101,116,0,8,50,49,58,49,52,58,48,48,115,114,0,32,106,97,118,97,46,98,101,97,110,115,46,80,114,111,112,101,114,116,121,67,104,97,110,103,101,83,117,112,112,111,114,116,88,-43,-46,100,87,72,96,-69,3,0,3,73,0,42,112,114,111,112,101,114,116,121,67,104,97,110,103,101,83,117,112,112,111,114,116,83,101,114,105,97,108,105,122,101,100,68,97,116,97,86,101,114,115,105,111,110,76,0,8,99,104,105,108,100,114,101,110,116,0,21,76,106,97,118,97,47,117,116,105,108,47,72,97,115,104,116,97,98,108,101,59,76,0,6,115,111,117,114,99,101,116,0,18,76,106,97,118,97,47,108,97,110,103,47,79,98,106,101,99,116,59,120,112,0,0,0,2,112,113,0,126,0,3,112,120"/>
+        </Property>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Verdana" size="36" style="1"/>
+        </Property>
+        <Property name="h24" type="boolean" value="true"/>
+      </Properties>
+      <Events>
+        <EventHandler event="sonarAlarma" listener="Reloj.RelojBean$SuenaAlarmaListener" parameters="Reloj.AlarmaEvent" handler="relojBean1SonarAlarma"/>
+      </Events>
+    </Component>
+  </SubComponents>
+</Form>
